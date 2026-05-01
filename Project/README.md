@@ -45,3 +45,6 @@ Features:
 - Grouped categorical variables (e.g., titles into Noble, Military, etc.)
 
   ## Data Visualization
+- Sex is the stongest predictor
+  - Female survival: ~74%
+  - Male survival: ~19%

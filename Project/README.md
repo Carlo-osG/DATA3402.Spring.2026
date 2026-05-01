@@ -1,53 +1,49 @@
 # Titanic Survival Predictions
 
-This repository attempts to predict the chances of survival and the factors that increase and/or decrease the chances of survival applying Logistic Regression, Decision Tree Classifier, Gaussian Naive Bayes and more from the Titanic Dataset. Dataset: https://www.kaggle.com/datasets/yasserh/titanic-dataset
+This project applies multiple machine learning classification models to the Titanic dataset to predict passenger survival based on engineered features and demographic data. Dataset: https://www.kaggle.com/datasets/yasserh/titanic-dataset
 
 ## Overview
-The task is to predict whether a passenger survived the Titanic disaster using structured tabular data such as age, sex, ticket class, and family relationships. This is a binary classification problem where the target variable is Survived (0 = No, 1 = Yes).
+The goal of this project is to predict whether a passenger survived the Titanic disaster using structured, tabular data. The dataset contains information on 891 passengers, including demographic details, ticket class, fare, and family relationships. This is formulated as a binary classification problem, where the target variable Survived indicates whether a passenger lived (1) or died (0).
 
-My approach focuses on:
+The approach taken in this project emphasizes feature engineering and model comparison. Instead of relying solely on raw variables, several new features were created, such as family size, title extraction from names, cabin assignment indicators, and ticket-sharing counts. These engineered features help capture underlying social and economic patterns that influenced survival.
 
-- Extensive feature engineering (family size, title extraction, cabin assignment, etc.)
-- Handling missing values and categorical encoding
-- Training and comparing multiple machine learning models
-
-I evaluated a wide range of models including Decision Trees, Random Forests, Gradient Boosting, and more.
+Multiple machine learning models were trained and evaluated, including both simple models like Logistic Regression and more advanced ensemble methods such as Random Forest and Gradient Boosting.
 
 ### Best Result:
-Gradient Boosting Classifier achieved ~83.4% cross-validation accuracy, outperforming all other models.
+
+The best-performing model, Gradient Boosting, achieved a cross-validation accuracy of approximately 83.4%, slightly outperforming other ensemble models.
 
 ## Summary of Work Done
 ### Data
 
-Type:
+The dataset consists of a single CSV file containing passenger-level information. Each row represents one individual, and the columns include both numerical and categorical features.
 
-- Input: CSV file with passenger features
-- Output: Binary survival label (0 or 1)
+The dataset contains:
 
-Size:
+- 891 total instances
+- A mix of numerical features (Age, Fare, SibSp, Parch)
+- Categorical features (Sex, Embarked, Cabin, Ticket)
+- A binary target variable (Survived)
 
-- 891 passengers total
-
-Features:
-
-- Numerical: Age, Fare, SibSp, Parch
-- Categorical: Sex, Embarked, Cabin, Title
-- Engineered: Family_Size, Name_Size, TicketNumberCounts, Cabin_Assigned
+Missing values were present in several columns, particularly Age, Cabin, and Embarked, which required preprocessing before modeling.
 
 ### Preprocessing/Cleanup
-- Filled missing Age values with mean
-- Filled missing Cabin with “U” (Unknown)
-- Extracted:
-  - Title from names
-  - Family Size
-  - Ticket sharing counts
-- Converted numerical features into bins (Age, Fare)
-- Grouped categorical variables (e.g., titles into Noble, Military, etc.)
+Significant preprocessing was required to prepare the data for machine learning. Missing values in the Age column were filled using the mean, while missing cabin values were replaced with a placeholder to indicate unknown status.
 
+A major focus of this project was feature engineering, which led to several new variables:
+
+- Family Size: Combined number of siblings/spouses and parents/children
+- Family Size Grouped: Categorized into small, medium, and large families
+- Title: Extracted from passenger names to capture social status
+- Cabin Assigned: Binary indicator for whether a passenger had a cabin
+- Fare and Age Binning: Converted continuous values into categories
+- Name Length: Proxy for social status
+- Ticket Sharing Counts: Number of passengers sharing the same ticket
+
+These features significantly improved the model’s ability to capture survival patterns.
+
+Categorical variables were encoded using one-hot encoding and ordinal encoding, while numerical features were passed through without scaling where appropriate.
   ## Data Visualization
 - Sex is the stongest predictor
   - Female survival: ~74%
   - Male survival: ~19%
-	Sex	Survived
-0	female	0.742038
-1	male	0.188908

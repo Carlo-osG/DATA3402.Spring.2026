@@ -14,3 +14,4 @@ My approach focuses on:
 I evaluated a wide range of models including Decision Trees, Random Forests, Gradient Boosting, and more.
 
 ### Best Result:
+Gradient Boosting Classifier achieved ~83.4% cross-validation accuracy, outperforming all other models.

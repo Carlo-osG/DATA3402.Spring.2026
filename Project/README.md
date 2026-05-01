@@ -33,3 +33,13 @@ Features:
 - Numerical: Age, Fare, SibSp, Parch
 - Categorical: Sex, Embarked, Cabin, Title
 - Engineered: Family_Size, Name_Size, TicketNumberCounts, Cabin_Assigned
+
+### Preprocessing/Cleanup
+- Filled missing Age values with mean
+- Filled missing Cabin with “U” (Unknown)
+- Extracted:
+  - Title from names
+  - Family Size
+  - Ticket sharing counts
+- Converted numerical features into bins (Age, Fare)
+- Grouped categorical variables (e.g., titles into Noble, Military, etc.)

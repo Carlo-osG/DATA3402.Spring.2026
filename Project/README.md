@@ -17,12 +17,12 @@ I evaluated a wide range of models including Decision Trees, Random Forests, Gra
 Gradient Boosting Classifier achieved ~83.4% cross-validation accuracy, outperforming all other models.
 
 ## Summary of Work Done
-#### Data
+### Data
 
 Type:
 
-Input: CSV file with passenger features
-Output: Binary survival label (0 or 1)
+- Input: CSV file with passenger features
+- Output: Binary survival label (0 or 1)
 
 Size:
 

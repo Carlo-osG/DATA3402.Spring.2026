@@ -43,3 +43,5 @@ Features:
   - Ticket sharing counts
 - Converted numerical features into bins (Age, Fare)
 - Grouped categorical variables (e.g., titles into Noble, Military, etc.)
+
+  ## Data Visualization

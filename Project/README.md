@@ -7,8 +7,8 @@ The task is to predict whether a passenger survived the Titanic disaster using s
 
 My approach focuses on:
 
-Extensive feature engineering (family size, title extraction, cabin assignment, etc.)
-Handling missing values and categorical encoding
-Training and comparing multiple machine learning models
+- Extensive feature engineering (family size, title extraction, cabin assignment, etc.)
+- Handling missing values and categorical encoding
+- Training and comparing multiple machine learning models
 
 I evaluated a wide range of models including Decision Trees, Random Forests, Gradient Boosting, and more.

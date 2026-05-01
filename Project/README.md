@@ -48,3 +48,6 @@ Features:
 - Sex is the stongest predictor
   - Female survival: ~74%
   - Male survival: ~19%
+	Sex	Survived
+0	female	0.742038
+1	male	0.188908

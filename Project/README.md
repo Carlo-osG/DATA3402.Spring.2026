@@ -58,8 +58,21 @@ Categorical variables were encoded using one-hot encoding and ordinal encoding, 
 | Age   | Youngest (0-19): 48%, Middle (19-25): 33%   | Children survived more   |
 | Fare   | Highest bracket: 64%, Lowest: 22%   | Direct wealth correlation   |
 
+Passengers with longer names show higher survival rates, likely because longer names often include formal titles linked to higher social status. Since wealthier passengers had better access to lifeboats, name length serves as an indirect indicator of class and survival probability.
+
+<img width="576" height="433" alt="image" src="https://github.com/user-attachments/assets/a43b9fc3-728f-4503-a986-7b8251a93e4b" />
+
 ### Correlation Matrix: 
 Survived correlated with Name_Length (+0.33) and Pclass (-0.34). SibSp and Parch showed correlation, confirming they could be combined.
 
 <img width="768" height="642" alt="image" src="https://github.com/user-attachments/assets/f2cac4df-e6b6-49f5-9036-a70199fb7500" />
+
+Other important findings included:
+
+- Higher fares were strongly associated with higher survival
+- Passengers with assigned cabins were more likely to survive
+- Smaller families had better survival outcomes than large families
+- Titles such as “Mrs” and “Miss” were associated with higher survival rates
+
+These insights directly guided the feature engineering process.
 

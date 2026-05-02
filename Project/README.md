@@ -57,3 +57,8 @@ Categorical variables were encoded using one-hot encoding and ordinal encoding, 
 | Title   | Noble/Mrs: 78%, Mr: 16%   | Status/gender combined   |
 | Age   | Youngest (0-19): 48%, Middle (19-25): 33%   | Children survived more   |
 | Fare   | Highest bracket: 64%, Lowest: 22%   | Direct wealth correlation   |
+
+Correlation Matrix: Survived correlated with Fare (+0.26) and Pclass (-0.34). SibSp and Parch showed correlation, confirming they could be combined.
+
+<img width="768" height="642" alt="image" src="https://github.com/user-attachments/assets/f2cac4df-e6b6-49f5-9036-a70199fb7500" />
+

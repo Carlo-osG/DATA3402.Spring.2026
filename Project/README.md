@@ -76,3 +76,20 @@ Other important findings included:
 
 These insights directly guided the feature engineering process.
 
+## Models & Preprocessing
+
+### Encoding:
+- Ordinal: Family_Size_Grouped (has ranking)
+- One-Hot: Sex, Embarked (no ranking)
+- Numeric: Pclass, Age, Fare, Cabin_Assigned, Name_Size, TicketNumberCounts
+
+Pipeline: ColumnTransformer → SimpleImputer → Encoders → Model
+
+## Problem Formulation
+
+The problem is defined as a supervised classification task:
+
+- Input: Passenger features (demographics, ticket info, engineered features)
+- Output: Binary survival prediction (0 or 1)
+
+The dataset was split into training and validation sets using stratified sampling to preserve class balance.

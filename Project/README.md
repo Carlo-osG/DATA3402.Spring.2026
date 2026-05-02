@@ -44,7 +44,7 @@ These features significantly improved the model’s ability to capture survival 
 
 Categorical variables were encoded using one-hot encoding and ordinal encoding, while numerical features were passed through without scaling where appropriate.
 
-## Data Visualization
+### Data Visualization
 
 ### Key Findings:
 
@@ -76,6 +76,15 @@ Other important findings included:
 
 These insights directly guided the feature engineering process.
 
+## Problem Formulation
+
+The problem is defined as a supervised classification task:
+
+- Input: Passenger features (demographics, ticket info, engineered features)
+- Output: Binary survival prediction (0 or 1)
+
+The dataset was split into training and validation sets using stratified sampling to preserve class balance.
+
 ## Models & Preprocessing
 
 ### Encoding:
@@ -99,11 +108,58 @@ The models tested include:
 
 All models were tuned using GridSearchCV with 5-fold stratified cross-validation to ensure fair comparison.
 
-## Problem Formulation
+## Training
 
-The problem is defined as a supervised classification task:
+Training was performed using the Scikit-learn library. The dataset was split into 80% training and 20% validation data, ensuring that the class distribution remained consistent.
 
-- Input: Passenger features (demographics, ticket info, engineered features)
-- Output: Binary survival prediction (0 or 1)
+Hyperparameters for each model were optimized using grid search. Due to the relatively small size of the dataset, training times were short, allowing for extensive experimentation across models.
 
-The dataset was split into training and validation sets using stratified sampling to preserve class balance.
+## Performance Comparison
+
+The performance of each model was evaluated using cross-validation accuracy.
+
+| Model | Accuracy |
+|------|------|
+| Gradient Boosting   | 0.8343   |
+| Random Forest   | 0.8287   |
+| Extra Trees   | 0.8132   |
+| Logistic Regression   | 0.8048   |
+| KNN   | 0.8048   |
+| Decision Tree   | 0.8020   |
+| SVC   | 0.8006   |
+| AdaBoost   | 0.7964   |
+| Naive Bayes   | 0.7655   |
+
+Ensemble methods clearly performed the best, with Gradient Boosting slightly outperforming Random Forest.
+
+## Conclusion
+
+This project demonstrates that feature engineering is critical in tabular machine learning problems. By creating meaningful features from the raw data, model performance improved significantly.
+
+The most influential features were:
+
+- Sex
+- Passenger Class (Pclass)
+- Title
+- Cabin Assignment
+- Fare
+ -Family Size
+
+Additionally, ensemble models proved to be the most effective approach for this dataset.
+
+## Future Work
+
+There are several directions for improving this project:
+
+- Implement advanced boosting algorithms such as XGBoost, LightGBM, or CatBoost
+- Apply ensemble stacking techniques
+- Perform deeper hyperparameter tuning
+- Explore feature selection methods to reduce redundancy
+
+## How to Reproduce Results
+
+To reproduce the results, follow these steps:
+
+- Clone the repository
+git clone [<your-repo-link>](http://localhost:8888/lab/tree/Project/Kaggle%20Tabular%20Data.ipynb)
+cd <repo-name>

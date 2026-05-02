@@ -161,6 +161,23 @@ There are several directions for improving this project:
 To reproduce the results, follow these steps:
 
 - Clone the repository
-  
- git clone Kaggle_Tabular_Data.ipynb
- cd Kaggle_Tabular_Data.ipynb
+ - git clone Kaggle_Tabular_Data.ipynb
+ - cd Kaggle_Tabular_Data.ipynb
+
+- Install required packages
+ - pip install pandas numpy seaborn matplotlib scikit-learn
+
+- Download the dataset from Kaggle and place it in the project directory
+
+- Run the training notebook or script to train models and generate predictions
+
+### Repository Structure
+
+- preprocess.ipynb        # Data cleaning and feature engineering
+- visualization.ipynb     # Exploratory data analysis
+- models.py               # Model definitions
+- training.ipynb          # Training and hyperparameter tuning
+- performance.ipynb       # Model comparison
+- inference.ipynb         # Generate predictions
+- utils.py                # Helper functions
+- submission_*.csv        # Kaggle submission files

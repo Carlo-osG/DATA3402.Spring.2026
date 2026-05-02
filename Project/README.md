@@ -85,6 +85,20 @@ These insights directly guided the feature engineering process.
 
 Pipeline: ColumnTransformer → SimpleImputer → Encoders → Model
 
+The models tested include:
+
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors
+- Support Vector Classifier
+- Logistic Regression
+- Gaussian Naive Bayes
+- AdaBoost
+- Extra Trees
+- Gradient Boosting
+
+All models were tuned using GridSearchCV with 5-fold stratified cross-validation to ensure fair comparison.
+
 ## Problem Formulation
 
 The problem is defined as a supervised classification task:

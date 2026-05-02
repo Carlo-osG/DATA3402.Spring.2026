@@ -181,3 +181,20 @@ To reproduce the results, follow these steps:
 - inference.ipynb        |  Generate predictions
 - utils.py               |  Helper functions
 - submission_*.csv       |  Kaggle submission files
+
+### Software Setup
+
+Required libraries:
+
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+
+## References
+- Kaggle Titanic Competition: https://www.kaggle.com/c/titanic
+- Scikit-learn Documentation: https://scikit-learn.org/
+- Lecture Notes: Data 3402 (Spring 2025)
+- Kaggle Community Notebooks
+- Titanic Machine Learning Tutorial (YouTube)

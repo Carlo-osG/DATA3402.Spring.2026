@@ -161,11 +161,11 @@ There are several directions for improving this project:
 To reproduce the results, follow these steps:
 
 - Clone the repository
- - git clone Kaggle_Tabular_Data.ipynb
- - cd Kaggle_Tabular_Data.ipynb
+  - git clone Kaggle_Tabular_Data.ipynb
+  - cd Kaggle_Tabular_Data.ipynb
 
 - Install required packages
- - pip install pandas numpy seaborn matplotlib scikit-learn
+  - pip install pandas numpy seaborn matplotlib scikit-learn
 
 - Download the dataset from Kaggle and place it in the project directory
 

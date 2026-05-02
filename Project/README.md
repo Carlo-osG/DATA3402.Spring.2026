@@ -43,7 +43,14 @@ A major focus of this project was feature engineering, which led to several new 
 These features significantly improved the model’s ability to capture survival patterns.
 
 Categorical variables were encoded using one-hot encoding and ordinal encoding, while numerical features were passed through without scaling where appropriate.
-  ## Data Visualization
-- Sex is the stongest predictor
-  - Female survival: ~74%
-  - Male survival: ~19%
+
+## Data Visualization
+| Feature | Pattern | Survival Impact |
+|------|------|------|
+| Sex   | Female: 74%, Male: 19%   | Strongest predictor   |
+| Pclass   | 1st: 63%, 2nd: 47%, 3rd: 24%   | Clear class effect   |
+| Cabin_Assigned   | Yes: 67%, No: 30%   | Wealth indicator   |
+| Family_Size_Grouped   | Small: 58%, Alone: 30%, Large: 16%   | Optimal group advantage   |
+| Title   | Noble/Mrs: 78%, Mr: 16%   | Status/gender combined   |
+| Age   | Youngest (0-19): 48%, Middle (19-25): 33%   | Children survived more   |
+| Fare   | Highest bracket: 64%, Lowest: 22%   | Direct wealth correlation   |

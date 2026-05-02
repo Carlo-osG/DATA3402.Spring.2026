@@ -45,6 +45,9 @@ These features significantly improved the model’s ability to capture survival 
 Categorical variables were encoded using one-hot encoding and ordinal encoding, while numerical features were passed through without scaling where appropriate.
 
 ## Data Visualization
+
+### Key Findings:
+
 | Feature | Pattern | Survival Impact |
 |------|------|------|
 | Sex   | Female: 74%, Male: 19%   | Strongest predictor   |

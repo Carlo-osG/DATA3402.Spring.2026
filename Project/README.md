@@ -173,11 +173,11 @@ To reproduce the results, follow these steps:
 
 ### Repository Structure
 
-- preprocess.ipynb        # Data cleaning and feature engineering
-- visualization.ipynb     # Exploratory data analysis
-- models.py               # Model definitions
-- training.ipynb          # Training and hyperparameter tuning
-- performance.ipynb       # Model comparison
-- inference.ipynb         # Generate predictions
-- utils.py                # Helper functions
-- submission_*.csv        # Kaggle submission files
+- preprocess.ipynb       |  Data cleaning and feature engineering
+- visualization.ipynb    |  Exploratory data analysis
+- models.py              |  Model definitions
+- training.ipynb         |  Training and hyperparameter tuning
+- performance.ipynb      |  Model comparison
+- inference.ipynb        |  Generate predictions
+- utils.py               |  Helper functions
+- submission_*.csv       |  Kaggle submission files

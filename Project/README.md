@@ -161,5 +161,6 @@ There are several directions for improving this project:
 To reproduce the results, follow these steps:
 
 - Clone the repository
-git clone [<your-repo-link>](http://localhost:8888/lab/tree/Project/Kaggle%20Tabular%20Data.ipynb)
-cd <repo-name>
+  
+ git clone Kaggle_Tabular_Data.ipynb
+ cd Kaggle_Tabular_Data.ipynb
